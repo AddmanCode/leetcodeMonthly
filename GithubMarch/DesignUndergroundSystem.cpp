@@ -7,7 +7,7 @@ public:
  
     //here we are taking another map DS to save the total Traveling time between two stations
     map<pair<string,string>,int> totalTravelTime;/*here pair will be the key, using which we will get value 
-                                                total Travel Time of type int*/
+                                                total Travel Time of type int */
  
     //here we are taking 3rd map DS to save or to keep track of number of customers who travelled in the exact same path
     map<pair<string,string>,int> noOfCustomers;
@@ -25,7 +25,7 @@ public:
  
         totalTravelTime[{entryDetails[id].second,stationName}] += diff; //here we are adding the time difference
         noOfCustomers[{entryDetails[id].second,stationName}]++;/*here we are incrementing the number of customer 
-                                                                who who travelled in the exact same path*/
+                                                                who have travelled in the exact same path*/
  
         entryDetails.erase(id);//here we are erasing the details as we are checking out!
     }
